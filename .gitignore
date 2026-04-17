@@ -4,10 +4,16 @@
 *.log
 *.pyc
 *.swp
+.DS_Store
+.atom/
 .buildlog/
 .history
+.svn/
+.idea/
+.vscode/
 
-
+# Generated files
+**/generated_plugin_registrant.dart
 
 # Flutter repo-specific
 /bin/cache/
@@ -117,3 +123,25 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# IntelliJ / Android Studio
+*.iml
+
+# VS Code (optional - если хочешь шарить настройки, убери)
+.vscode/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Firebase (если добавишь в будущем)
+google-services.json
+GoogleService-Info.plist
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Local env files
+.env
